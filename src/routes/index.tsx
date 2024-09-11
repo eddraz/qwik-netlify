@@ -1,5 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { server$, type DocumentHead } from "@builder.io/qwik-city";
+
+export const setCookieServer = server$(async function () {
+  console.log("setCookieServer");
+  this.cookie.set("test", "test", { path: "/", httpOnly: true });
+});
 
 export default component$(() => {
   return (
@@ -10,6 +15,15 @@ export default component$(() => {
         <br />
         Happy coding.
       </div>
+
+      <button
+        onClick$={() => {
+          console.log("clicked");
+          setCookieServer();
+        }}
+      >
+        Set cookie
+      </button>
     </>
   );
 });
