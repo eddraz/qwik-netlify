@@ -28,15 +28,15 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.8.0",
-    "@builder.io/qwik-city": "^1.8.0",
+    "@builder.io/qwik": "https://pkg.pr.new/@builder.io/qwik@b4cd308",
+    "@builder.io/qwik-city": "https://pkg.pr.new/@builder.io/qwik-city@b4cd308",
     "@netlify/edge-functions": "^2.0.0",
     "@types/eslint": "8.56.10",
     "@types/node": "20.14.11",
     "@typescript-eslint/eslint-plugin": "7.16.1",
     "@typescript-eslint/parser": "7.16.1",
     "eslint": "8.57.0",
-    "eslint-plugin-qwik": "^1.8.0",
+    "eslint-plugin-qwik": "https://pkg.pr.new/eslint-plugin-qwik@b4cd308",
     "firebase": "^10.13.1",
     "netlify-cli": "^15.0.0",
     "prettier": "3.3.3",
